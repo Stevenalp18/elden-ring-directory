@@ -1,82 +1,89 @@
 import { NavLink } from "react-router-dom";
 
-const DropDownNavbar = () => {
+const DropDownNavbar = (props) => {
   return (
-    <nav className="text-white fixed z-50 border-2 w-full h-full top-16 overflow-auto">
+    <nav
+      style={{ visibility: props.visibility }}
+      className="lg:hidden text-white fixed z-50 w-full h-full top-16 overflow-auto"
+    >
       <ul className="flex flex-col flex-nowrap text-white bg-neutral-800 overflow-auto text-xl font-['Lana'] text-center">
         <li>
           <NavLink to={"/ammos"}>
-            <div className="p-4 bg-neutral-700 p-4">Ammos</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Ammos</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/armor"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Armor</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Armor</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/ashes"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Ashes of War</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Ashes of War</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/bosses"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Bosses</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Bosses</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/classes"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Classes</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Classes</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/creatures"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Creatures</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Creatures</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/incantations"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Incantantations</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">
+              Incantantations
+            </div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/items"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Items</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Items</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/locations"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Locations</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Locations</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/npcs"}>
-            <div className="p-4 bg-neutral-700 p-4 ">NPCs</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">NPCs</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/shields"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Shields</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Shields</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/sorceries"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Sorceries</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Sorceries</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/spirits"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Spirits</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Spirits</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/talismans"}>
-            <div className="p-4 bg-neutral-700 p-4 ">Talismans</div>
+            <div className="active:bg-neutral-700 p-4 sm:p-6">Talismans</div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/weapons"}>
-            <div className="pt-3 px-3 pb-20 bg-neutral-700 p-4 ">Weapons</div>
+            <div className="pt-3 px-3 pb-20 active:bg-neutral-700 ">
+              Weapons
+            </div>
           </NavLink>
         </li>
       </ul>
