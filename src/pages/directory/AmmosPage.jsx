@@ -3,7 +3,7 @@ import { baseUrl } from "../../data/fetchData";
 import { useEffect, useState } from "react";
 import AmmosCards from "../../components/Cards/AmmosCards";
 
-const AmmosPage = (props) => {
+const AmmosPage = () => {
   const url = baseUrl + "ammos?limit=100";
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState();
@@ -31,9 +31,9 @@ const AmmosPage = (props) => {
   return (
     <>
       <DefaultLayout />
-      <div className="relative top-16 lg:left-72 text-white font-['Lora'] lg:w-9/12">
-        <div className="border-2 border-[#0a0a0a] m-auto w-full">
-          <div className="text-center m-10 text-3xl font-bold ">Ammo Types</div>
+      <div className="pt-24 lg:ml-60 text-white font-['Lora'] border-2">
+        <div className="m-auto ">
+          <div className="text-center text-3xl font-bold ">Ammo Types</div>
           <div className="flex gap-8 text-xl flex-wrap justify-center m-auto my-10 text-center">
             {loading ? <div>Loading...</div> : <AmmosCards arr={data} />}
           </div>

@@ -19,7 +19,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="fixed w-full bg-neutral-900 pl-2 md:pl-0 pr-4 md:px-4 py-2 text-white font-['Lora'] justify-between flex z-50">
+      <nav className="fixed w-[100%] bg-neutral-900 pl-2 md:pl-0 pr-4 md:px-4 py-2 text-white font-['Lora'] justify-between flex z-50">
         <div className="flex">
           <img src="https://i.redd.it/3e2afpjsi4f61.png" width="50" />
           <h1 className="my-auto text-lg">

@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const SideNavbar = () => {
   return (
-    <nav className="hidden lg:block p-8 w-60 fixed top-16 border-r-2 border-neutral-800 z-10 bg-black h-full">
-      <ul className="text-white text- flex flex-col gap-4">
+    <nav className="hidden lg:block p-8 w-60 fixed top-16 left-0 border-r-2 border-neutral-800 z-10 bg-black h-[100%]">
+      <ul className="text-white flex flex-col gap-4">
         <li>
           <NavLink to={"/ammos"}>Ammos</NavLink>
         </li>
